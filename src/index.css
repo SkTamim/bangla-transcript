@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+input,
+select {
+	background-color: aliceblue !important;
+	box-shadow: none !important;
+	color: #333;
+}
+
+.input-wrap {
+	position: relative;
+	width: 80%;
+}
+input {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	font-size: 20px !important;
+	font-weight: 500 !important;
+	font-family: "Hind Siliguri", sans-serif;
+}
+#suggestions {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+
+	height: 200px;
+	overflow-y: auto;
+}
+.list-group-item.active {
+	background-color: rgb(127, 192, 249) !important;
+	color: #333;
+	border-color: #333;
+}
+#lan {
+	font-size: 20px !important;
+	font-weight: 500 !important;
+	cursor: pointer;
+}
