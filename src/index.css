@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 input,
 select {
 	background-color: aliceblue !important;
@@ -29,6 +30,7 @@ input {
 
 	height: 200px;
 	overflow-y: auto;
+	scroll-behavior: smooth;
 }
 .list-group-item.active {
 	background-color: rgb(127, 192, 249) !important;
