@@ -1,9 +1,6 @@
-import {
-  useRef,
-  useState,
-} from 'react';
+import { useRef, useState } from "react";
 
-import SelectBox from './SelectBox';
+import SelectBox from "./SelectBox";
 
 function App() {
 	async function getBanglaData(text) {
@@ -77,7 +74,13 @@ function App() {
 			document.getElementById("suggestions").scrollTop = 0;
 		} else {
 			setActiveIndex((previousIndex) => previousIndex + 1);
-			document.getElementById(activeIndex + 1).scrollIntoView(true);
+			document
+				.getElementById(activeIndex + 1)
+				.scrollIntoView({
+					behavior: "smooth",
+					block: "end",
+					inline: "nearest",
+				});
 		}
 	}
 	function arrowUp() {
@@ -87,7 +90,13 @@ function App() {
 			suggestionDiv.scrollTop = suggestionDiv.scrollHeight;
 		} else {
 			setActiveIndex((previousIndex) => previousIndex - 1);
-			document.getElementById(activeIndex - 1).scrollIntoView(true);
+			document
+				.getElementById(activeIndex - 1)
+				.scrollIntoView({
+					behavior: "smooth",
+					block: "end",
+					inline: "nearest",
+				});
 		}
 	}
 
